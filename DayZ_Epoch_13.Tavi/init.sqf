@@ -85,6 +85,8 @@ if (isServer) then {
 	// Add trader citys
 	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_13.Tavi\mission.sqf";
 	_serverMonitor = 	[] execVM "\z\addons\dayz_server\system\server_monitor.sqf";
+	
+
 };
 
 if (!isDedicated) then {
@@ -105,12 +107,23 @@ if (!isDedicated) then {
 	
 	execVM "custom\service_point\service_point.sqf";
 	_nil = [] execVM "custom\VehicleKeyChanger\VehicleKeyChanger_init.sqf";
+	
 
 };
 
-execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
+//execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 #include "\z\addons\dayz_code\system\BIS_Effects\init.sqf"
 //InfiSTAR SafeZones
 [] execVM "custom\safezone\safezone.sqf";
 [] execVM "custom\BaseProtect\zombiekill.sqf";
+//execVM "custom\servermsg\servermsg.sqf";
+call compile preprocessFileLineNumbers "custom\timecontrol\timecontrol.sqf";
 
+
+
+{
+_adminated = _x getVariable ["adminated",0];
+if( !isNil "_adminated" &&  _adminated != 0)then{
+_x setObjectTexture [0, "gui\adminskin.jpg"];
+};
+}forEach playableUnits; // if your antihack doesnt allow this use nearestObjects[player, ["Survivor2_DZ"],25000];

@@ -130,6 +130,12 @@ if (!isDedicated) then {
 	player_plotPreview = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_showPlotRadius.sqf";
 	player_upgradeVehicle =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_upgradeVehicle.sqf";
 
+	"PVOZ_adminSkin" addPublicVariableEventHandler {
+		 _obj =  (_this select 1) select 0 ;
+		 _colour =  (_this select 1) select 1; // this can also be a color or an image (color format = #(rgb,8,8,3)color(1,0,0,1)		
+	                          _obj setObjectTexture [0, _colour];
+               	};
+	
 	//ui
 	player_selectSlot =			compile preprocessFileLineNumbers "custom\ui_selectSlot.sqf";
 	player_gearSync	=			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_gearSync.sqf";

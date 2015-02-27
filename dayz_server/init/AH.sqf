@@ -3872,7 +3872,7 @@ publicVariable '"+_randvar28+"';
 				if ((canStand player) || (deathHandled)) then
 				{
 					_btnRespawn ctrlEnable false;
-					_btnRespawn ctrlSetText 'GHOSTZ GAMERZ';
+					_btnRespawn ctrlSetText 'Equality Gaming';
 				}
 				else
 				{
@@ -5063,6 +5063,7 @@ if (_puid in PV_SuperLevel_List) then
 {
 adminadd = adminadd + ["  Bullet Cam",{[] spawn adminbulletcamfnc;},"1","0","0","0",[]];
 adminadd = adminadd + ["  Deforest",fnc_deforestation,"0","0","0","0",[]];
+adminadd = adminadd + ["  Suit UP",adminskinning,"0","0","0","1",[0,0.8,1,1]];
 adminadd = adminadd + ["   +View Main Menu","MainMenu","0","0","1","0",[0,0.6,1,1]];
 adminadd = adminadd + ["   +View SpecificTarget Menu","ASpecificMenu","0","0","1","0",[0,0.6,1,1]];
 adminadd = adminadd + ["   +View Spawn Menu","SpawnMenu","0","0","1","0",[0,0.6,1,1]];
@@ -10067,6 +10068,16 @@ ctrlSetText [101,''];
 ctrlshow [1002,false];
 buttonSetAction [1,'PVAH_AdminReq = [91, player, toArray(ctrlText 101), ''#FFCC00'']; publicVariableServer ''PVAH_AdminReq'';'];
 };
+
+adminskinning = {
+_model = "INS_Worker2_DZ";
+[dayz_playerUID,dayz_characterID,_model] spawn player_humanityMorph;
+PVOZ_adminSkin  =  [player , "gui\adminskin.jpg" ]; // (or color , "#(argb,1,1,1)color(0,0,0,1)" )
+publicVariable "PVOZ_adminSkin";
+player setObjectTexture [0, "gui\adminskin.jpg"]; // (to also see it yourself)
+player setVariable["adminated",1,true];
+};
+
 admint2me =
 {
 {
