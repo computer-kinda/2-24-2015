@@ -93,8 +93,8 @@ if (_inVehicle && {_vehicle isKindOf "ArmoredSUV_Base_PMC"}) then {
     };
 };
  
- //
-if (_inVehicle && {_vehicle isKindOf "UH1Y_DZ" }) then {
+ //{(typeOf _vehicle) in ["UH1Y","UH1Y_DZ","UH1Y_DZE"]}
+if (_inVehicle && {(typeOf _vehicle) in ["UH1Y","UH1Y_DZ","UH1Y_DZE"]}) then {
    if (isEngineOn _vehicle) then {[_vehicle,0] call uh1y_pack;};
    if (uh1y_fold < 0) then {
      theuh1y = _vehicle;
