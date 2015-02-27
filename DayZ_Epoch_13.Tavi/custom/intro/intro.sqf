@@ -19,7 +19,7 @@ _role6names = ["No PVP!!!", "No Bases Near Loot", "Call Your Mission"];
 _role7 = "Mumble Server";
 _role7names = ["209.15.226.35:4012"];
 _role8 = "Email Support";
-_role8names = ["equalitygaming001@gmail.com"];
+_role8names = ["equalitygaming@mail.com"];
 _role9 = "AND REMEMBER";
 _role9names = ["HAVE", "A", "GREAT", "TIME", "WITH", "EQUALITY GAMING"];
 
