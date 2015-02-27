@@ -17,14 +17,21 @@ MaxVehicleLimit = 300;
 MaxDynamicDebris = 0;
 dayz_poleSafeArea = 30;
 
-EpochEvents = [["any","any","any","any",5,"Military"], ["any","any","any","any",5,"Military"], 
-["any","any","any","any",10,"Treasure"], 
-["any","any","any","any",40,"Supplyitems"], 
-["any","any","any","any",25,"Construction"],
-["any","any","any","any",10,"crash_spawner"],
-["any","any","any","any",10,"crash_spawner"],
+EpochEvents = [
+["any","any","any","any",10,"Military"], 
+["any","any","any","any",45,"Military"], 
+["any","any","any","any",5,"Construction"], 
+["any","any","any","any",35,"Construction"],
+["any","any","any","any",15,"Treasure"], 
+["any","any","any","any",55,"Treasure"], 
+["any","any","any","any",20,"crash_spawner"],
+["any","any","any","any",60,"crash_spawner"],
+["any","any","any","any",14,"flybye"],
+["any","any","any","any",45,"flybye"],
 ["any","any","any","any",25,"supply_drop"],
-["any","any","any","any",14,"flybye"]];
+["any","any","any","any",40,"Supplyitems"]
+
+];
 dayz_MapArea = 20000;
 dayz_fullMoonNights = true;
 dayz_minpos = -26000; 
