@@ -62,7 +62,7 @@ DZAI_lowBloodLevel = 3000;
 DZAI_weaponNoise = false;
 
 //If enabled, AI group will attempt to track down player responsible for killing a group member. Players with radios will be given text warnings if they are being pursued (Default: true)
-DZAI_findKiller = false;	
+DZAI_findKiller = true;	
 
 //If normal probability check for spawning NVGs fails, then give AI temporary NVGs only if they are spawned with weapongrade 1 or higher (applies only during nighttime hours). Temporary NVGs are unlootable and will be removed at death (Default: false).									
 DZAI_tempNVGs = false;	
@@ -74,7 +74,7 @@ DZAI_humanityGain = 50;
 DZAI_radioMsgs = true;
 
 //If enabled, last surviving unit of a group will be granted slightly boosted skills. No effect if unit is spawned alone (Default: false)
-DZAI_lastManStanding = false;
+DZAI_lastManStanding = true;
 
 
 /*DZAI client-side addon settings. 
@@ -135,7 +135,7 @@ DZAI_keepMaxSpawnTime = 3600;
 DZAI_huntingChance = 0.99;
 
 //Probability to send first available AI helicopter to reinforce dynamic AI group. No effect if DZAI_maxHeliPatrols is set to zero. (Default: 0.50)
-DZAI_heliReinforceChance = 0.05;
+DZAI_heliReinforceChance = 0.20;
 
 //Array of area blacklist markers. Players within marker areas will not be targeted for dynamic AI spawns (Example: ["BlacklistArea1","BlacklistArea2","BlacklistArea3"])
 //Epoch: DZAI will automatically set up 200m-radius blacklist areas around each trader area.
