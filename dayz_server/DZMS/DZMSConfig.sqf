@@ -26,14 +26,14 @@ DZMSCleanDeath = false;
 
 // Do you want AI that players run over to not have gear?
 // (If DZMSCleanDeath is true, this doesn't matter)
-DZMSRunGear = false;
+DZMSRunGear = true;
 
 // How long before bodies disappear? (in seconds) (default = 2400)
 DZMSBodyTime = 2400;
 
 // Percentage of AI that must be dead before mission completes (default = 0)
 //( 0 is 0% of AI / 0.50 is 50% / 1 is 100% )
-DZMSRequiredKillPercent = 0;
+DZMSRequiredKillPercent = 1;
 
 // How long in seconds before mission scenery disappears (default = 1800 / 0 = disabled)
 DZMSSceneryDespawnTimer = 1800;
@@ -100,7 +100,7 @@ DZMSMajorMax = 300;
 
 // Time in seconds before a minor mission will run.
 // At least this much time will pass between minor missions. Default = 600 (10 Minutes)
-DZMSMinorMin = 120;
+DZMSMinorMin = 300;
 
 // Maximum time in seconds before a minor mission will run.
 // A minor mission will always run before this much time has passed. Default = 990 (16.5 Minutes)
