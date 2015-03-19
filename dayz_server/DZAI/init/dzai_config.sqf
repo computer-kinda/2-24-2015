@@ -135,7 +135,7 @@ DZAI_keepMaxSpawnTime = 3600;
 DZAI_huntingChance = 0.99;
 
 //Probability to send first available AI helicopter to reinforce dynamic AI group. No effect if DZAI_maxHeliPatrols is set to zero. (Default: 0.50)
-DZAI_heliReinforceChance = 0.20;
+DZAI_heliReinforceChance = 0.40;
 
 //Array of area blacklist markers. Players within marker areas will not be targeted for dynamic AI spawns (Example: ["BlacklistArea1","BlacklistArea2","BlacklistArea3"])
 //Epoch: DZAI will automatically set up 200m-radius blacklist areas around each trader area.
@@ -204,8 +204,8 @@ DZAI_maxLandPatrols = 4;
 DZAI_respawnTMinL = 600;
 DZAI_respawnTMaxL = 900;
 
-//Classnames of land vehicle types to use, with the maximum amount of each type to spawn. Default: [["UAZ_Unarmed_TK_EP1",1]]
-DZAI_vehList = [["UAZ_Unarmed_TK_EP1",4]];
+//Classnames of land vehicle types to use, with the maximum amount of each type to spawn. Default: [["HMMWV_M1151_M2_DES_EP1",1]]
+DZAI_vehList = [["HMMWV_M1151_M2_DES_EP1",4]];
 
 //Difficulty level of land vehicle patrol units. Difficulty level also affects unit loadout and loot. Possible values: 0 to 3 (Default: 3)
 DZAI_vehUnitLevel = 2;
@@ -321,7 +321,7 @@ DZAI_gradeChancesDyn = [0.00,0.88,0.09,0.03];
 
 //AI skill settings level 0 (Skill, Minimum skill, Maximum skill). Baseline skill level: 0.50
 DZAI_skill0 = [	
-	["aimingAccuracy",0.10,0.110],
+	["aimingAccuracy",2.00,2.50],
 	["aimingShake",0.50,0.59],
 	["aimingSpeed",0.50,0.59],
 	["endurance",0.50,0.59],
@@ -335,7 +335,7 @@ DZAI_skill0 = [
 
 //AI skill settings level 1 (Skill, Minimum skill, Maximum skill). Baseline skill level: 0.60
 DZAI_skill1 = [	
-	["aimingAccuracy",0.110,0.115],
+	["aimingAccuracy",2.00,2.50],
 	["aimingShake",0.60,0.69],
 	["aimingSpeed",0.60,0.69],
 	["endurance",0.60,0.69],
@@ -349,7 +349,7 @@ DZAI_skill1 = [
 
 //AI skill settings level 2 (Skill, Minimum skill, Maximum skill). Baseline skill level: 0.70
 DZAI_skill2 = [	
-	["aimingAccuracy",0.110,0.120],
+	["aimingAccuracy",2.00,2.50],
 	["aimingShake",0.70,0.79],
 	["aimingSpeed",0.70,0.79],
 	["endurance",0.70,0.79],
@@ -363,7 +363,7 @@ DZAI_skill2 = [
 
 //AI skill settings level 3 (Skill, Minimum skill, Maximum skill). Baseline skill level: 0.80
 DZAI_skill3 = [	
-	["aimingAccuracy",0.150,0.180],
+	["aimingAccuracy",2.00,2.50],
 	["aimingShake",0.80,0.89],
 	["aimingSpeed",0.80,0.89],
 	["endurance",0.80,0.89],
