@@ -321,49 +321,49 @@ DZAI_gradeChancesDyn = [0.00,0.88,0.09,0.03];
 
 //AI skill settings level 0 (Skill, Minimum skill, Maximum skill). Baseline skill level: 0.50
 DZAI_skill0 = [	
-	["aimingAccuracy",2.00,2.50],
-	["aimingShake",0.50,0.59],
-	["aimingSpeed",0.50,0.59],
-	["endurance",0.50,0.59],
-	["spotDistance",0.50,0.59],
-	["spotTime",0.50,0.59],
-	["courage",0.50,0.59],
-	["reloadSpeed",0.50,0.59],
-	["commanding",0.60,0.69],
-	["general",0.60,0.69]
+	["aimingAccuracy",,0.80,0.89],
+	["aimingShake",0.80,0.89],
+	["aimingSpeed",0.80,0.89],
+	["endurance",0.80,0.89],
+	["spotDistance",0.80,0.89],
+	["spotTime",0.80,0.89],
+	["courage",0.80,0.89],
+	["reloadSpeed",0.80,0.89],
+	["commanding",0.80,0.89],
+	["general",0.80,0.89]
 ];
 
 //AI skill settings level 1 (Skill, Minimum skill, Maximum skill). Baseline skill level: 0.60
 DZAI_skill1 = [	
-	["aimingAccuracy",2.00,2.50],
-	["aimingShake",0.60,0.69],
-	["aimingSpeed",0.60,0.69],
-	["endurance",0.60,0.69],
-	["spotDistance",0.60,0.69],
-	["spotTime",0.60,0.69],
-	["courage",0.60,0.69],
-	["reloadSpeed",0.60,0.69],
-	["commanding",0.70,0.79],
-	["general",0.70,0.79]
+	["aimingAccuracy",0.80,0.89],
+	["aimingShake",0.80,0.89],
+	["aimingSpeed",0.80,0.89],
+	["endurance",0.80,0.89],
+	["spotDistance",,0.80,0.89],
+	["spotTime",0.80,0.89],
+	["courage",0.80,0.89],
+	["reloadSpeed",0.80,0.89],
+	["commanding",0.80,0.89],
+	["general",0.80,0.89]
 ];
 
 //AI skill settings level 2 (Skill, Minimum skill, Maximum skill). Baseline skill level: 0.70
 DZAI_skill2 = [	
-	["aimingAccuracy",2.00,2.50],
-	["aimingShake",0.70,0.79],
-	["aimingSpeed",0.70,0.79],
-	["endurance",0.70,0.79],
-	["spotDistance",0.70,0.79],
-	["spotTime",0.70,0.79],
-	["courage",0.70,0.79],
-	["reloadSpeed",0.70,0.79],
+	["aimingAccuracy",0.80,0.89],
+	["aimingShake",0.80,0.89],
+	["aimingSpeed",0.80,0.89],
+	["endurance",0.80,0.89],
+	["spotDistance",0.80,0.89],
+	["spotTime",0.80,0.89],
+	["courage",0.80,0.89],
+	["reloadSpeed",0.80,0.89],
 	["commanding",0.80,0.89],
 	["general",0.80,0.89]
 ];
 
 //AI skill settings level 3 (Skill, Minimum skill, Maximum skill). Baseline skill level: 0.80
 DZAI_skill3 = [	
-	["aimingAccuracy",2.00,2.50],
+	["aimingAccuracy",0.80,0.89],
 	["aimingShake",0.80,0.89],
 	["aimingSpeed",0.80,0.89],
 	["endurance",0.80,0.89],
